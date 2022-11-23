@@ -1,6 +1,7 @@
 package miu.edu.bookqueryservice.service;
 
 import miu.edu.bookqueryservice.domain.Book;
+import miu.edu.bookqueryservice.domain.Review;
 import miu.edu.bookqueryservice.exception.CustomException;
 import miu.edu.bookqueryservice.integration.EventPublisher;
 import miu.edu.bookqueryservice.repository.BookRepository;
@@ -70,7 +71,7 @@ public class BookServiceImpl implements BookService {
     public void addReview(ReviewDto reviewDto) {
         Optional<Book> book = bookRepository.findById(reviewDto.getIsbn());
         if (book.isPresent()) {
-            book.get().getReviews().add(ReviewAdapter.toReview(reviewDto));
+            book.get().getReviews().add(BookAdapter.toReview(reviewDto));
             bookRepository.save(book.get());
             eventPublisher.publish( new BookChangeEventDto(ChangeEventType.UPDATE, BookAdapter.toBookDto(book.get())));
         } else {

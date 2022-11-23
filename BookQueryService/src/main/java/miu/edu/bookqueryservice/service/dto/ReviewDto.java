@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @ToString
 public class ReviewDto {
+    private String id;
     private String isbn;
     private int reviewRating;
     private String customerName;

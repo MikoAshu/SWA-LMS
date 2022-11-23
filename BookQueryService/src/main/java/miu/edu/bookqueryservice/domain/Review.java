@@ -10,6 +10,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @ToString
 public class Review {
+    private String id;
     private String isbn;
     private int reviewRating;
     private String customerName;

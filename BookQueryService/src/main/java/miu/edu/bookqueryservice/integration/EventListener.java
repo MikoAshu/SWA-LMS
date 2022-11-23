@@ -45,7 +45,7 @@ public class EventListener {
         }
     }
 
-    @KafkaListener(topics = "ReviewTopic")
+    @KafkaListener(topics = "reviewTopic")
     public void receiveReviewEvent(@Payload String reviewChangeEventString,
                                  @Headers MessageHeaders headers) {
 
@@ -57,7 +57,7 @@ public class EventListener {
             } else if (reviewChangeEventDto.getEvent().equals(ChangeEventType.CREATE)) {
                 bookService.addReview(reviewChangeEventDto.getReviewDto());
             } else if (reviewChangeEventDto.getEvent().equals(ChangeEventType.DELETE)) {
-                bookService.deleteReview(reviewChangeEventDto.getReviewDto().getId());
+                bookService.deleteReview(reviewChangeEventDto.getReviewDto().getIsbn());
             } else {
                 System.out.println("Unknown event type: " + reviewChangeEventDto.getEvent());
             }

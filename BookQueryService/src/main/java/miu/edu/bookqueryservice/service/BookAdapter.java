@@ -5,9 +5,12 @@ import miu.edu.bookqueryservice.domain.Review;
 import miu.edu.bookqueryservice.service.dto.BookDto;
 import miu.edu.bookqueryservice.service.dto.ReviewDto;
 
+import java.util.List;
+
 public class BookAdapter {
     public static ReviewDto toReviewDto(Review review) {
         return new ReviewDto(
+                review.getId(),
                 review.getIsbn(),
                 review.getReviewRating(),
                 review.getCustomerName(),
@@ -16,6 +19,7 @@ public class BookAdapter {
 
     public static Review toReview(ReviewDto reviewDto) {
         return new Review(
+                reviewDto.getId(),
                 reviewDto.getIsbn(),
                 reviewDto.getReviewRating(),
                 reviewDto.getCustomerName(),
@@ -23,20 +27,22 @@ public class BookAdapter {
     }
 
     public static BookDto toBookDto(Book book) {
+        List<ReviewDto> reviewDtos = book.getReviews().stream().map(BookAdapter::toReviewDto).toList();
         return new BookDto(
                 book.getIsbn(),
                 book.getTitle(),
                 book.getDescription(),
                 book.getAuthorName(),
-                toReviewDto(book.getReviews()));
+                reviewDtos);
     }
 
     public static Book toBook(BookDto bookDto) {
+        List<Review> reviews = bookDto.getReviewDto().stream().map(BookAdapter::toReview).toList();
         return new Book(
                 bookDto.getIsbn(),
                 bookDto.getTitle(),
                 bookDto.getDescription(),
                 bookDto.getAuthorName(),
-                toReview(bookDto.getReviewDto()));
+                reviews);
     }
 }

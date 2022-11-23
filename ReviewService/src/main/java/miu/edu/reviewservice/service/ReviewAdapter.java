@@ -6,6 +6,7 @@ import miu.edu.reviewservice.domain.Review;
 public class ReviewAdapter {
  public static ReviewDto toReviewDto(Review review) {
      return new ReviewDto(
+             review.getId(),
              review.getIsbn(),
              review.getReviewRating(),
              review.getCustomerName(),
@@ -14,6 +15,7 @@ public class ReviewAdapter {
 
     public static Review toReview(ReviewDto reviewDto) {
         return new Review(
+                reviewDto.getId(),
                 reviewDto.getIsbn(),
                 reviewDto.getReviewRating(),
                 reviewDto.getCustomerName(),

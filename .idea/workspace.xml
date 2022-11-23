@@ -15,7 +15,28 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Book query listen to book command service." />
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Book query listen to book command service.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/seeder/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/BookDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/ReviewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/test" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/seeder/DataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +134,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.kafka-magic: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.ReviewServiceApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.apigateway.ApiGatewayApplication" />
@@ -129,6 +150,9 @@
       </method>
     </configuration>
     <configuration name="BookQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="BookQueryService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.bookqueryservice.BookQueryServiceApplication" />
       <method v="2">
@@ -218,7 +242,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="64974000" />
+      <workItem from="1669093697741" duration="71712000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -385,6 +409,46 @@
           <url>file://$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/service/BookServiceImpl.java</url>
           <line>32</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
