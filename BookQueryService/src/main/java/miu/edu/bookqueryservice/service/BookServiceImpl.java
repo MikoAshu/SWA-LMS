@@ -81,11 +81,28 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public void updateReview(ReviewDto reviewDto) {
-
+          Optional<Book> book = bookRepository.findById(reviewDto.getIsbn());
+          if (book.isPresent()) {
+                Review review = BookAdapter.toReview(reviewDto);
+                book.get().getReviews().removeIf(r -> r.getId().equals(review.getId()));
+                book.get().getReviews().add(review);
+                bookRepository.save(book.get());
+                eventPublisher.publish( new BookChangeEventDto(ChangeEventType.UPDATE, BookAdapter.toBookDto(book.get())));
+          } else {
+                throw new CustomException("Book not found", HttpStatus.NOT_FOUND);
+          }
     }
 
     @Override
-    public void deleteReview(String isbn) {
+    public void deleteReview(String isbn, String reviewId) {
+        Optional<Book> book = bookRepository.findById(isbn);
+        if (book.isPresent()) {
+            book.get().getReviews().removeIf(r -> r.getId().equals(reviewId));
+            bookRepository.save(book.get());
+            eventPublisher.publish( new BookChangeEventDto(ChangeEventType.UPDATE, BookAdapter.toBookDto(book.get())));
+        } else {
+            throw new CustomException("Book not found", HttpStatus.NOT_FOUND);
+        }
 
     }
 }

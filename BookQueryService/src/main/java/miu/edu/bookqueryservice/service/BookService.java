@@ -17,6 +17,6 @@ public interface BookService {
 
     void updateReview(ReviewDto reviewDto);
 
-    void deleteReview(String isbn);
+    void deleteReview(String isbn, String reviewId);
 
 }

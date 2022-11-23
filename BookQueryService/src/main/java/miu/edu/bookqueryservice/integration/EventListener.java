@@ -57,7 +57,7 @@ public class EventListener {
             } else if (reviewChangeEventDto.getEvent().equals(ChangeEventType.CREATE)) {
                 bookService.addReview(reviewChangeEventDto.getReviewDto());
             } else if (reviewChangeEventDto.getEvent().equals(ChangeEventType.DELETE)) {
-                bookService.deleteReview(reviewChangeEventDto.getReviewDto().getIsbn());
+                bookService.deleteReview(reviewChangeEventDto.getReviewDto().getIsbn(), reviewChangeEventDto.getReviewDto().getId());
             } else {
                 System.out.println("Unknown event type: " + reviewChangeEventDto.getEvent());
             }
