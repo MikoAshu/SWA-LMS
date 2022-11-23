@@ -1,0 +1,37 @@
+server:
+  port: 80
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: APIGateway
+  cloud:
+    gateway:
+      routes:
+        - id: BookQueryService
+          uri: lb://BookQueryService
+          predicates:
+            - Path=/api/books/**
+            - Method=GET
+        - id: BookCommandService
+          uri: lb://BookCommandService
+          predicates:
+            - Path=/api/books/**
+            - Method=POST,PUT,DELETE,PATCH
+        - id: ReviewService
+          uri: lb://ReviewService
+          predicates:
+            - Path=/api/reviews/**
+        - id: CustomerService
+          uri: lb://CustomerService
+          predicates:
+            - Path=/api/customers/**
+        - id: BorrowService
+          uri: lb://BorrowService
+          predicates:
+            - Path=/api/borrows/**
+

@@ -1,0 +1,77 @@
+version: "3"
+services:
+#  mongo
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+#    environment:
+#        - MONGO_INITDB_ROOT_USERNAME=root
+#        - MONGO_INITDB_ROOT_PASSWORD=example
+#  zipkin
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411"
+    environment:
+      - STORAGE_TYPE=elasticsearch
+      - ES_HOSTS=http://elasticsearch:9200
+# kafka and zookeeper
+  zookeeper:
+    image: 'bitnami/zookeeper:latest'
+    ports:
+      - '2181:2181'
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+  kafka:
+    image: 'bitnami/kafka:latest'
+    ports:
+      - '9092:9092'
+    environment:
+      - KAFKA_BROKER_ID=1
+      - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
+      - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://127.0.0.1:9092
+      - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    depends_on:
+      - zookeeper
+#kafka magic
+  kafka-magic:
+    image: 'digitsy/kafka-magic:latest'
+    ports:
+      - '8081:80'
+    environment:
+      - KAFKA_BROKER_LIST=kafka:9092
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+#    depends_on:
+#      - kafka
+#      - zookeeper
+#elk stack
+  elasticsearch:
+      image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
+      container_name: elasticsearch
+      environment:
+      - discovery.type=single-node
+      ports:
+      - "9200:9200"
+      - "9300:9300"
+#  kibana:
+#      image: docker.elastic.co/kibana/kibana:7.6.2
+#      container_name: kibana
+#      ports:
+#      - "5601:5601"
+#      environment:
+#      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+#      depends_on:
+#      - elasticsearch
+#  logstash:
+#      image: docker.elastic.co/logstash/logstash:7.6.2
+#      container_name: logstash
+#      ports:
+#      - "5000:5000"
+#      - "5044:5044"
+#      volumes:
+#      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+#      depends_on:
+#      - elasticsearch

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/APIGateway/APIGateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookCommandService/BookCommandService.iml" filepath="$PROJECT_DIR$/BookCommandService/BookCommandService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookQueryService/BookQueryService.iml" filepath="$PROJECT_DIR$/BookQueryService/BookQueryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BorrowService/BorrowService.iml" filepath="$PROJECT_DIR$/BorrowService/BorrowService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CustomerService/CustomerService.iml" filepath="$PROJECT_DIR$/CustomerService/CustomerService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LMS.iml" filepath="$PROJECT_DIR$/LMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReviewService/ReviewService.iml" filepath="$PROJECT_DIR$/ReviewService/ReviewService.iml" />
+    </modules>
+  </component>
+</project>

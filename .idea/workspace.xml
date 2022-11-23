@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="AutomaticModuleUnloader">
+    <loaded-modules>
+      <module name="LMS" />
+      <module name="APIGateway" />
+      <module name="EurekaServer" />
+      <module name="BookCommandService" />
+      <module name="BookQueryService" />
+      <module name="CustomerService" />
+      <module name="ReviewService" />
+    </loaded-modules>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Book query listen to book command service." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2Ht9p7QnIuF3KzaWSg53hg4dbuu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Pretty-Groovy.txt.groovy",
+    "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/Users/michaelworku/Dev/MIU/SA/Assignments/LMS/BorrowService/src/main/java/miu/edu/borrowservice/service/event",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
+    ]
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/event" />
+      <recent name="$PROJECT_DIR$/BookQueryService/src/main/resources" />
+      <recent name="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service" />
+      <recent name="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice" />
+      <recent name="$PROJECT_DIR$/BorrowService/src/main/resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="miu.edu.bookqueryservice.service.dto" />
+      <recent name="miu.edu.borrowservice.integration" />
+      <recent name="miu.edu.borrowservice.service" />
+      <recent name="miu.edu.bookqueryservice.domain" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.kafka-magic: Compose Deployment">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="APIGateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BookCommandService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.bookcommandservice.BookCommandServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookQueryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BookQueryService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.bookqueryservice.BookQueryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BorrowServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="BorrowService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.borrowservice.BorrowServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CustomerService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.customerservice.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="EurekaServer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ReviewService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.reviewservice.ReviewServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker-compose.yml.kafka-magic: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="kafka-magic" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mongo: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongo" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.zookeeper: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zookeeper" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.kafka-magic: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mongo: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="" />
+      <created>1669093695267</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669093695267</updated>
+      <workItem from="1669093697741" duration="64974000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1669096451282</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669096451282</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Working Book command service">
+      <created>1669130265377</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669130265377</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added mongo db to book query and command service&#10;added customer service with mongo db">
+      <created>1669149371570</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669149371571</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Review Service added">
+      <created>1669159464947</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669159464950</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Recommitting eureka service">
+      <created>1669159535344</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669159535344</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Recommitting eureka service">
+      <created>1669159563878</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669159563878</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Adding Borrow service">
+      <created>1669181421043</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669181421044</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding Borrow service">
+      <created>1669181501260</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669181501260</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adding Book Query service">
+      <created>1669185774947</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669185774948</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Kafka Working">
+      <created>1669188241926</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669188241927</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Customer and book feign client">
+      <created>1669204174537</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669204174538</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Kafka config for services">
+      <created>1669204531571</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669204531572</updated>
+    </task>
+    <task id="LOCAL-00013" summary="added lombok and customer change event working">
+      <created>1669214493301</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669214493302</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Customer update event for customer working">
+      <created>1669215503871</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669215503871</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Borrow Book update working">
+      <created>1669223484185</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669223484186</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/APIGateway" />
+      <path value="$PROJECT_DIR$/BookCommandService" />
+      <path value="$PROJECT_DIR$/BookQueryService" />
+      <path value="$PROJECT_DIR$/BorrowService" />
+      <path value="$PROJECT_DIR$/CustomerService" />
+      <path value="$PROJECT_DIR$/EurekaServer" />
+      <path value="$PROJECT_DIR$/ReviewService" />
+    </ignored-roots>
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="Working Book command service" />
+    <MESSAGE value="added mongo db to book query and command service&#10;added customer service with mongo db" />
+    <MESSAGE value="Review Service added" />
+    <MESSAGE value="Recommitting eureka service" />
+    <MESSAGE value="Adding Borrow service" />
+    <MESSAGE value="Adding Book Query service" />
+    <MESSAGE value="Kafka Working" />
+    <MESSAGE value="Customer and book feign client" />
+    <MESSAGE value="Kafka config for services" />
+    <MESSAGE value="added lombok and customer change event working" />
+    <MESSAGE value="Customer update event for customer working" />
+    <MESSAGE value="Borrow Book update working" />
+    <MESSAGE value="Book query listen to book command service." />
+    <option name="LAST_COMMIT_MESSAGE" value="Book query listen to book command service." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/service/BookServiceImpl.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/controller/BookController.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/service/BookServiceImpl.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
