@@ -15,50 +15,8 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Client application api calls working">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_13_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_i2p_crypto_eddsa_0_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_common_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_core_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_osgi_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_sshd_sshd_sftp_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_13_1_202206130422_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_13_1_202206130422_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_ssh_apache_5_13_1_202206130422_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_36.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_7_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_3_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_3_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/java/miu/edu/configserver/ConfigServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/BookCommandService.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/BookQueryService.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/BorrowService.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/CustomerService.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/config/ReviewService.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfigServer/src/test/java/miu/edu/configserver/ConfigServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Added config server with service configurations.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/ClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/ClientApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/miu/edu/customerservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/miu/edu/customerservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ConfigServer" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -123,7 +81,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -317,7 +275,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="95649000" />
+      <workItem from="1669093697741" duration="95980000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -452,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669278857903</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added config server with service configurations.">
+      <created>1669285435876</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1669285435877</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,6 +443,8 @@
       <path value="$PROJECT_DIR$/CustomerService" />
       <path value="$PROJECT_DIR$/EurekaServer" />
       <path value="$PROJECT_DIR$/ReviewService" />
+      <path value="$PROJECT_DIR$/Client" />
+      <path value="$PROJECT_DIR$/ConfigServer" />
     </ignored-roots>
     <MESSAGE value="initial commit" />
     <MESSAGE value="Working Book command service" />
@@ -498,7 +465,8 @@
     <MESSAGE value="Zipkin tracing working" />
     <MESSAGE value="Getting Borrows Working" />
     <MESSAGE value="Client application api calls working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Client application api calls working" />
+    <MESSAGE value="Added config server with service configurations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added config server with service configurations." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

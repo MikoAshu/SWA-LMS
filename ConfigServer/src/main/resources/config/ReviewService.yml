@@ -1,0 +1,49 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: ReviewService
+  data:
+    mongodb:
+      #      username: root
+      #      password: example
+      host: localhost
+      port: 27017
+      database: reviewDb
+
+  # kafka
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      bootstrap-servers: localhost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      group-id: ReviewService
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      properties:
+        spring:
+          json:
+            trusted:
+              packages: "*"
+    bootstrap-servers: localhost:9092
+
+app:
+  kafka:
+    topic:
+      review: reviewTopic
+# eureka
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+logging:
+  level:
+    root: error
