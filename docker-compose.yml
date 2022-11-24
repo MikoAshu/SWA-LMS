@@ -70,7 +70,7 @@ services:
 #      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
 #      depends_on:
 #      - elasticsearch
-  kafkaland:
+  kafka2:
     image: landoop/fast-data-dev
     ports:
       - "2181:2181"

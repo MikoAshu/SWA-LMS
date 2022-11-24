@@ -15,11 +15,22 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="git repo added">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Config server and uml diagram">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookCommandService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCommandService/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/resources/bootstrap.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LMS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LMS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookcommandservicediagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uml/SWA-LMS UML final.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/uml/SWA-LMS UML final.drawio" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +130,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml.zipkin: Compose Deployment">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.apigateway.ApiGatewayApplication" />
@@ -141,7 +152,7 @@
       <option name="ACTIVE_PROFILES" />
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <module name="BookQueryService" />
+      <module name="BookQueryService2" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.bookqueryservice.BookQueryServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -195,12 +206,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="docker-compose.yml.kafka-magic: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml.kafka2: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="kafka-magic" />
+              <option value="kafka2" />
             </list>
           </option>
           <option name="sourceFilePath" value="docker-compose.yml" />
@@ -262,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.kafkaland: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.kafka-magic: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafka2: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.kafkaland: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +289,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="103057000" />
+      <workItem from="1669093697741" duration="107356000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -441,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669288675272</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Config server and uml diagram">
+      <created>1669294531951</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1669294531951</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,7 +511,8 @@
     <MESSAGE value="Added config server and client to vcs mappings" />
     <MESSAGE value="Added bootstrap.yml config file to the services" />
     <MESSAGE value="git repo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="git repo added" />
+    <MESSAGE value="Config server and uml diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config server and uml diagram" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -547,11 +566,6 @@
           <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java</url>
           <line>19</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Client/src/main/java/miu/edu/client/ClientApplication.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

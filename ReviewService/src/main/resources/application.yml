@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: ReviewService
+  config:
+    import: optional:configserver:http://localhost:8888
   data:
     mongodb:
 #      username: root

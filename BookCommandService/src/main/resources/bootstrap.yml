@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: BookCommandService
-  cloud:
-    config:
-      uri: http://localhost:8888
-

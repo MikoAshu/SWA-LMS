@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: CustomerService
+  config:
+    import: optional:configserver:http://localhost:8888
   # kafka
   kafka:
     producer:

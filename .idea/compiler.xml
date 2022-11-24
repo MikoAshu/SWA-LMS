@@ -8,8 +8,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="EurekaServer" />
+        <module name="BookQueryService2" />
         <module name="CustomerService" />
-        <module name="BookQueryService" />
         <module name="BookCommandService" />
         <module name="APIGateway" />
         <module name="ConfigServer" />
@@ -21,7 +21,7 @@
     <bytecodeTargetLevel>
       <module name="APIGateway" target="17" />
       <module name="BookCommandService" target="17" />
-      <module name="BookQueryService" target="17" />
+      <module name="BookQueryService2" target="17" />
       <module name="BorrowService" target="17" />
       <module name="Client" target="17" />
       <module name="ConfigServer" target="17" />
@@ -34,7 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="APIGateway" options="-parameters" />
       <module name="BookCommandService" options="-parameters" />
-      <module name="BookQueryService" options="-parameters" />
+      <module name="BookQueryService2" options="-parameters" />
       <module name="BorrowService" options="-parameters" />
       <module name="Client" options="-parameters" />
       <module name="ConfigServer" options="-parameters" />

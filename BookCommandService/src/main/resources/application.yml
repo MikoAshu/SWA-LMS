@@ -13,7 +13,7 @@ spring:
       host: localhost
       port: 27017
       database: bookCommandDb
- kafka
+# kafka
   kafka:
     producer:
       bootstrap-servers: localhost:9092
@@ -41,7 +41,7 @@ app:
   kafka:
     topic:
       book: BookTopic
- eureka
+# eureka
 eureka:
   client:
     serviceUrl:

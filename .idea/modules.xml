@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/APIGateway/APIGateway.iml" filepath="$PROJECT_DIR$/APIGateway/APIGateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/BookCommandService/BookCommandService.iml" filepath="$PROJECT_DIR$/BookCommandService/BookCommandService.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BookQueryService/BookQueryService.iml" filepath="$PROJECT_DIR$/BookQueryService/BookQueryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BookQueryService/BookQueryService2.iml" filepath="$PROJECT_DIR$/BookQueryService/BookQueryService2.iml" />
       <module fileurl="file://$PROJECT_DIR$/BorrowService/BorrowService.iml" filepath="$PROJECT_DIR$/BorrowService/BorrowService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Client/Client.iml" filepath="$PROJECT_DIR$/Client/Client.iml" />
       <module fileurl="file://$PROJECT_DIR$/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" />
