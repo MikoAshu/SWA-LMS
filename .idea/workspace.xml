@@ -15,18 +15,9 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Added config server and client to vcs mappings">
-      <change afterPath="$PROJECT_DIR$/BookCommandService/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BookQueryService/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BorrowService/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ReviewService/src/main/resources/bootstrap.yml" afterDir="false" />
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Added bootstrap.yml config file to the services">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CustomerService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +276,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="97063000" />
+      <workItem from="1669093697741" duration="97586000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -434,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669285611361</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Added bootstrap.yml config file to the services">
+      <created>1669287959451</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1669287959451</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +482,8 @@
     <MESSAGE value="Client application api calls working" />
     <MESSAGE value="Added config server with service configurations." />
     <MESSAGE value="Added config server and client to vcs mappings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added config server and client to vcs mappings" />
+    <MESSAGE value="Added bootstrap.yml config file to the services" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added bootstrap.yml config file to the services" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,3 +2,9 @@ spring:
   rsocket:
     server:
       port: 8888
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/MikoAshu/SWA-LMS.git
+          search-paths: ConfigServer/src/main/resources/config
