@@ -12,6 +12,7 @@
         <module name="BookQueryService" />
         <module name="BookCommandService" />
         <module name="APIGateway" />
+        <module name="ConfigServer" />
         <module name="Client" />
         <module name="ReviewService" />
         <module name="BorrowService" />
@@ -23,6 +24,7 @@
       <module name="BookQueryService" target="17" />
       <module name="BorrowService" target="17" />
       <module name="Client" target="17" />
+      <module name="ConfigServer" target="17" />
       <module name="CustomerService" target="17" />
       <module name="EurekaServer" target="17" />
       <module name="ReviewService" target="17" />
@@ -35,6 +37,7 @@
       <module name="BookQueryService" options="-parameters" />
       <module name="BorrowService" options="-parameters" />
       <module name="Client" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
       <module name="CustomerService" options="-parameters" />
       <module name="EurekaServer" options="-parameters" />
       <module name="ReviewService" options="-parameters" />

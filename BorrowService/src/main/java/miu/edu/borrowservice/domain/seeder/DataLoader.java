@@ -19,6 +19,7 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("DataLoader : Loading data");
+        borrowRepository.deleteAll();
         Borrow borrow1 = new Borrow("121212", new Date(), "1234567890", "John Doe", "1234567890", "Java");
         Borrow borrow2 = new Borrow("121213", new Date(), "1234567891", "Jaina Proudmoore", "1234567891", "C#");
         Borrow borrow3 = new Borrow("121214", new Date(), "1234567892", "Arthas", "1234567892", "Python");

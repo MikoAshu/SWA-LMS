@@ -22,22 +22,23 @@ services:
     image: 'bitnami/kafka:latest'
     ports:
       - '9092:9092'
+      - "9093:9093"
     environment:
       - KAFKA_BROKER_ID=1
       - KAFKA_CFG_LISTENERS=PLAINTEXT://:9092
       - KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://127.0.0.1:9092
       - KAFKA_CFG_ZOOKEEPER_CONNECT=zookeeper:2181
       - ALLOW_PLAINTEXT_LISTENER=yes
-    depends_on:
-      - zookeeper
+#    depends_on:
+#      - zookeeper
 #kafka magic
   kafka-magic:
     image: 'digitsy/kafka-magic:latest'
     ports:
-      - '8081:80'
+      - '8080:80'
     environment:
-      - KAFKA_BROKER_LIST=kafka:9092
-      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+        KMAGIC_ALLOW_TOPIC_DELETE: "true"
+        KMAGIC_ALLOW_SCHEMA_DELETE: "true"
 #    depends_on:
 #      - kafka
 #      - zookeeper
@@ -69,3 +70,22 @@ services:
 #      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
 #      depends_on:
 #      - elasticsearch
+  kafkaland:
+    image: landoop/fast-data-dev
+    ports:
+      - "2181:2181"
+      - "3030:3030"
+      - "3031:3031"
+      - "9092:9092"
+      - "8081:8081"
+      - "8082:8082"
+      - "8083:8083"
+    environment:
+      ADV_HOST: kafka
+  magic:
+    image: digitsy/kafka-magic
+    ports:
+      - "8080:80"
+    environment:
+      KMAGIC_ALLOW_TOPIC_DELETE: "true"
+      KMAGIC_ALLOW_SCHEMA_DELETE: "true"

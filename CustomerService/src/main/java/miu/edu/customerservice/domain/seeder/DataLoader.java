@@ -19,6 +19,7 @@ public class DataLoader implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("DataLoader is running");
 
+        customerRepository.deleteAll();
         Address address1 = new Address("1234", "Fairfield", "52557");
         Address address2 = new Address("1235", "Fairfield", "52557");
         Contact contact1 = new Contact("515-555-5555", "test@test.com");

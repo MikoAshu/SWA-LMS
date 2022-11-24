@@ -21,6 +21,7 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("DataLoader is running");
+        bookRepository.deleteAll();
         Book book1 = new Book("1234567890", "Java", "Java Book", "Author 1");
         Book book2 = new Book("1234567891", "C#", "C# Book", "Author 2");
         Book book3 = new Book("1234567892", "Python", "Python Book", "Author 3");
@@ -31,9 +32,9 @@ public class DataLoader implements ApplicationRunner {
         BookDto bookDto = new BookDto("1234567893", "C++", "C++ Book", "Author 4");
         BookDto bookDto2 = new BookDto("1234567894", "C", "C Book", "Author 5");
         BookDto bookDto3 = new BookDto("1234567895", "Cobol", "Cobol Book", "Author 6");
-        bookService.createBook(bookDto);
-        bookService.createBook(bookDto2);
-        bookService.createBook(bookDto3);
+//        bookService.createBook(bookDto);
+//        bookService.createBook(bookDto2);
+//        bookService.createBook(bookDto3);
 
     }
 }

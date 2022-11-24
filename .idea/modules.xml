@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/BookQueryService/BookQueryService.iml" filepath="$PROJECT_DIR$/BookQueryService/BookQueryService.iml" />
       <module fileurl="file://$PROJECT_DIR$/BorrowService/BorrowService.iml" filepath="$PROJECT_DIR$/BorrowService/BorrowService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Client/Client.iml" filepath="$PROJECT_DIR$/Client/Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConfigServer/ConfigServer.iml" filepath="$PROJECT_DIR$/ConfigServer/ConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/CustomerService/CustomerService.iml" filepath="$PROJECT_DIR$/CustomerService/CustomerService.iml" />
       <module fileurl="file://$PROJECT_DIR$/EurekaServer/EurekaServer.iml" filepath="$PROJECT_DIR$/EurekaServer/EurekaServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/LMS.iml" filepath="$PROJECT_DIR$/LMS.iml" />

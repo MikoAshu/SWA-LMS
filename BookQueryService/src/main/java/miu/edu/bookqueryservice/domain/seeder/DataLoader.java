@@ -17,7 +17,7 @@ public class DataLoader implements ApplicationRunner {
     @Override
     public void run(ApplicationArguments args) throws Exception {
         System.out.println("DataLoader: Loading data");
-
+        bookRepository.deleteAll();
         Review review1 = new Review("637e945b9e800641567f33fc","1234567890",5,  "Daniel Adam", "Great book");
         Review review2 = new Review("637e945b9e800641567f33fd","1234567891",4,  "Rose Ken", "Good book");
         Review review3 = new Review("637e945b9e800641567f33fe","1234567892",3,  "Mil Shadow", "Average book");
