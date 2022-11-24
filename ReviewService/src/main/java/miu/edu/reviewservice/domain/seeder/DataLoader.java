@@ -29,8 +29,8 @@ public class DataLoader implements ApplicationRunner {
         ReviewDto reviewDto1 = new ReviewDto( "1234567890",5,  "Daniel Adam", "Great book");
         ReviewDto reviewDto2 = new ReviewDto( "1234567891",4,  "Rose Ken", "Good book");
 
-        reviewService.addReview(reviewDto1);
-        reviewService.addReview(reviewDto2);
+//        reviewService.addReview(reviewDto1);
+//        reviewService.addReview(reviewDto2);
 
 //        reviewRepository.save(review1);
 //        reviewRepository.save(review2);

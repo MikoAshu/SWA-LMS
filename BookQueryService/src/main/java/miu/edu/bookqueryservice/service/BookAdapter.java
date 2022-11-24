@@ -49,4 +49,8 @@ public class BookAdapter {
                 bookDto.getAuthorName(),
                 reviews);
     }
+
+    public static List<BookDto> toBookDtos(List<Book> bookList) {
+        return bookList.stream().map(BookAdapter::toBookDto).toList();
+    }
 }

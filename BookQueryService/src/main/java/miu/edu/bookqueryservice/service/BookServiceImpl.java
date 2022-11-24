@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -73,7 +74,11 @@ public class BookServiceImpl implements BookService {
     public void addReview(ReviewDto reviewDto) {
         Optional<Book> book = bookRepository.findById(reviewDto.getIsbn());
         if (book.isPresent()) {
-            book.get().getReviews().add(BookAdapter.toReview(reviewDto));
+            if (book.get().getReviews() == null){
+                book.get().setReviews(List.of(BookAdapter.toReview(reviewDto)));
+            } else {
+                book.get().getReviews().add(BookAdapter.toReview(reviewDto));
+            }
             bookRepository.save(book.get());
             eventPublisher.publish( new BookChangeEventDto(ChangeEventType.UPDATE, BookAdapter.toBookDto(book.get())));
         } else {
@@ -106,5 +111,10 @@ public class BookServiceImpl implements BookService {
             throw new CustomException("Book not found", HttpStatus.NOT_FOUND);
         }
 
+    }
+
+    @Override
+    public List<BookDto> getAllBooks() {
+        return BookAdapter.toBookDtos(bookRepository.findAll());
     }
 }

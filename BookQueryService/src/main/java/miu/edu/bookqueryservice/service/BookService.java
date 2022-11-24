@@ -4,6 +4,8 @@ package miu.edu.bookqueryservice.service;
 import miu.edu.bookqueryservice.service.dto.BookDto;
 import miu.edu.bookqueryservice.service.dto.ReviewDto;
 
+import java.util.List;
+
 public interface BookService {
     BookDto getBook(String isbn);
 
@@ -19,4 +21,5 @@ public interface BookService {
 
     void deleteReview(String isbn, String reviewId);
 
+    List<BookDto> getAllBooks();
 }

@@ -22,9 +22,9 @@ public class DataLoader implements ApplicationRunner {
         Borrow borrow1 = new Borrow("121212", new Date(), "1234567890", "John Doe", "1234567890", "Java");
         Borrow borrow2 = new Borrow("121213", new Date(), "1234567891", "Jaina Proudmoore", "1234567891", "C#");
         Borrow borrow3 = new Borrow("121214", new Date(), "1234567892", "Arthas", "1234567892", "Python");
-        borrowRepository.save(borrow1);
-        borrowRepository.save(borrow2);
-        borrowRepository.save(borrow3);
+//        borrowRepository.save(borrow1);
+//        borrowRepository.save(borrow2);
+//        borrowRepository.save(borrow3);
         System.out.println("DataLoader : Data loaded");
     }
 }

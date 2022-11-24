@@ -15,20 +15,35 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Zipkin tracing working">
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Getting Borrows Working">
+      <change afterPath="$PROJECT_DIR$/Client/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/ClientApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/Component.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/AddressDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/BookDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/BooksDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/BorrowDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/BorrowsDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/ContactDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/CustomerDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/java/miu/edu/client/dto/ReviewDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client/src/test/java/miu/edu/client/ClientApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/controller/BorrowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/domain/Borrow.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/domain/Borrow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/integration/EventPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/integration/EventPublisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/repository/BorrowRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/repository/BorrowRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowService.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +65,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Client" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -83,8 +98,8 @@
     "WebServerToolWindowFactoryState": "false",
     "database.data.extractors.current.export.id": "Pretty-Groovy.txt.groovy",
     "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "/Users/michaelworku/Dev/MIU/SA/Assignments/LMS/BorrowService/src/main/java/miu/edu/borrowservice/service/event",
+    "jdk.selected.JAVA_MODULE": "openjdk-18",
+    "last_opened_file_path": "/Users/michaelworku/Dev/MIU/SA/Assignments/LMS/Client/src/main/java/miu/edu/client",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -107,17 +122,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Client/src/main/java/miu/edu/client" />
       <recent name="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/event" />
       <recent name="$PROJECT_DIR$/BookQueryService/src/main/resources" />
       <recent name="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service" />
       <recent name="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice" />
-      <recent name="$PROJECT_DIR$/BorrowService/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="miu.edu.client.dto" />
+      <recent name="miu.edu.client" />
       <recent name="miu.edu.bookqueryservice.service.dto" />
       <recent name="miu.edu.borrowservice.integration" />
       <recent name="miu.edu.borrowservice.service" />
-      <recent name="miu.edu.bookqueryservice.domain" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -127,7 +143,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.zipkin: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.ClientApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.apigateway.ApiGatewayApplication" />
@@ -161,6 +177,13 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="BorrowService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.borrowservice.BorrowServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.client.ClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,7 +281,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="82784000" />
+      <workItem from="1669093697741" duration="90184000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -379,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669243508965</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Getting Borrows Working">
+      <created>1669254644734</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1669254644735</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +453,8 @@
     <MESSAGE value="Adding Book working when a new review is added" />
     <MESSAGE value="BookQueryService review update and delete event added" />
     <MESSAGE value="Zipkin tracing working" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zipkin tracing working" />
+    <MESSAGE value="Getting Borrows Working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Getting Borrows Working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -475,13 +506,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java</url>
-          <line>17</line>
+          <line>19</line>
           <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/controller/BorrowController.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowServiceImpl.java</url>
@@ -492,6 +518,11 @@
           <url>file://$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowServiceImpl.java</url>
           <line>44</line>
           <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Client/src/main/java/miu/edu/client/ClientApplication.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

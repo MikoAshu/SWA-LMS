@@ -24,9 +24,9 @@ public class DataLoader implements ApplicationRunner {
         Book book1 = new Book("1234567890", "Java", "Java Book", "Author 1");
         Book book2 = new Book("1234567891", "C#", "C# Book", "Author 2");
         Book book3 = new Book("1234567892", "Python", "Python Book", "Author 3");
-        bookRepository.save(book1);
-        bookRepository.save(book2);
-        bookRepository.save(book3);
+//        bookRepository.save(book1);
+//        bookRepository.save(book2);
+//        bookRepository.save(book3);
 
         BookDto bookDto = new BookDto("1234567893", "C++", "C++ Book", "Author 4");
         BookDto bookDto2 = new BookDto("1234567894", "C", "C Book", "Author 5");

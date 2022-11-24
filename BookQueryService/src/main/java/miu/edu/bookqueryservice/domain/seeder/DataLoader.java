@@ -30,9 +30,9 @@ public class DataLoader implements ApplicationRunner {
         book2.addReview(review2);
         book3.addReview(review3);
 
-        bookRepository.save(book1);
-        bookRepository.save(book2);
-        bookRepository.save(book3);
+//        bookRepository.save(book1);
+//        bookRepository.save(book2);
+//        bookRepository.save(book3);
 
         System.out.println("DataLoader: Loading data completed");
 
