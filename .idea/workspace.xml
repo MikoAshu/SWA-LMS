@@ -15,8 +15,10 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Added bootstrap.yml config file to the services">
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="git repo added">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCommandService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigServer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +75,7 @@
     "database.data.extractors.current.export.id": "Pretty-Groovy.txt.groovy",
     "database.data.extractors.current.id": "Pretty-Groovy.txt.groovy",
     "jdk.selected.JAVA_MODULE": "openjdk-18",
-    "last_opened_file_path": "/Users/michaelworku/Dev/MIU/SA/Assignments/LMS/ReviewService/src/main/resources",
+    "last_opened_file_path": "/Users/michaelworku/Dev/MIU/SA/Assignments/LMS/ConfigServerConfigs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,11 +98,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ConfigServerConfigs" />
       <recent name="$PROJECT_DIR$/ReviewService/src/main/resources" />
       <recent name="$PROJECT_DIR$/CustomerService/src/main/resources" />
       <recent name="$PROJECT_DIR$/BorrowService/src/main/resources" />
       <recent name="$PROJECT_DIR$/BookQueryService/src/main/resources" />
-      <recent name="$PROJECT_DIR$/Client/src/main/java/miu/edu/client" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="miu.edu.client.dto" />
@@ -117,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.kafkaland: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.apigateway.ApiGatewayApplication" />
@@ -276,7 +278,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="97586000" />
+      <workItem from="1669093697741" duration="103057000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -432,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669287959451</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="git repo added">
+      <created>1669288675272</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1669288675272</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,7 +492,8 @@
     <MESSAGE value="Added config server with service configurations." />
     <MESSAGE value="Added config server and client to vcs mappings" />
     <MESSAGE value="Added bootstrap.yml config file to the services" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added bootstrap.yml config file to the services" />
+    <MESSAGE value="git repo added" />
+    <option name="LAST_COMMIT_MESSAGE" value="git repo added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
