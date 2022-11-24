@@ -15,26 +15,46 @@
     </loaded-modules>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Book query listen to book command service.">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0bac30eb-35a8-418b-b9da-e36c7e4e5c87.xml" afterDir="false" />
+    <list default="true" id="1827a50b-31ec-4dd3-b607-76a90b58176c" name="Changes" comment="Zipkin tracing working">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_aws_brave_propagation_aws_0_21_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_context_slf4j_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_http_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpasyncclient_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpclient_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_jms_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_clients_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_streams_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_messaging_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_mongodb_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_rpc_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_rabbit_5_13_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_metrics_micrometer_2_16_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_autoconfigure_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_brave_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_sleuth_3_1_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zipkin_2_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BorrowService/test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/repository/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/BookDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/BookDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/dto/ReviewDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/test" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIGateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/APIGateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCommandService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/src/main/java/miu/edu/bookcommandservice/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookCommandService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookCommandService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BookQueryService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BookQueryService/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BorrowService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/controller/BorrowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/controller/BorrowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/BorrowServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/java/miu/edu/borrowservice/service/FeignClients.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BorrowService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BorrowService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/java/miu/edu/customerservice/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/java/miu/edu/customerservice/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/CustomerService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EurekaServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/EurekaServer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReviewService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/seeder/DataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/domain/seeder/DataLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/service/ReviewDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ReviewService/src/main/java/miu/edu/reviewservice/controller/ReviewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +154,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ReviewServiceApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml.zipkin: Compose Deployment">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="APIGateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.apigateway.ApiGatewayApplication" />
@@ -143,6 +163,9 @@
       </method>
     </configuration>
     <configuration name="BookCommandServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="BookCommandService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.bookcommandservice.BookCommandServiceApplication" />
       <method v="2">
@@ -160,6 +183,9 @@
       </method>
     </configuration>
     <configuration name="BorrowServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="BorrowService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.borrowservice.BorrowServiceApplication" />
       <method v="2">
@@ -167,6 +193,9 @@
       </method>
     </configuration>
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <option name="ALTERNATIVE_JRE_PATH" value="18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="CustomerService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="miu.edu.customerservice.CustomerServiceApplication" />
       <method v="2">
@@ -213,6 +242,19 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration name="docker-compose.yml.zookeeper: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -228,6 +270,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.kafka-magic: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.mongo: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.zookeeper: Compose Deployment" />
@@ -242,7 +285,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669093695267</updated>
-      <workItem from="1669093697741" duration="71712000" />
+      <workItem from="1669093697741" duration="76641000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1669096451282</created>
@@ -349,7 +392,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669223484186</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Adding Book working when a new review is added">
+      <created>1669242997588</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669242997588</updated>
+    </task>
+    <task id="LOCAL-00017" summary="BookQueryService review update and delete event added">
+      <created>1669243508964</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669243508965</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +447,10 @@
     <MESSAGE value="Customer update event for customer working" />
     <MESSAGE value="Borrow Book update working" />
     <MESSAGE value="Book query listen to book command service." />
-    <option name="LAST_COMMIT_MESSAGE" value="Book query listen to book command service." />
+    <MESSAGE value="Adding Book working when a new review is added" />
+    <MESSAGE value="BookQueryService review update and delete event added" />
+    <MESSAGE value="Zipkin tracing working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zipkin tracing working" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -431,24 +491,24 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/service/BookServiceImpl.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
           <line>51</line>
           <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/integration/EventListener.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BookQueryService/src/main/java/miu/edu/bookqueryservice/controller/BookController.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

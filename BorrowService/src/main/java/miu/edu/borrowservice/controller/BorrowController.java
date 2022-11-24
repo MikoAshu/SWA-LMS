@@ -7,7 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/borrow")
+@RequestMapping("/borrows")
 public class BorrowController {
     @Autowired
     private BorrowService borrowService;

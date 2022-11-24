@@ -28,10 +28,10 @@ public class BorrowServiceImpl implements BorrowService {
     BorrowRepository borrowRepository;
 
     @Autowired
-    private FeignClients.CustomerClient customerClient;
+    private CustomerClient customerClient;
 
     @Autowired
-    private FeignClients.BookQueryClient bookClient;
+    private BookQueryClient bookClient;
 
     @Override
     public BorrowDto getBorrow(String isbn) {
@@ -120,4 +120,15 @@ public class BorrowServiceImpl implements BorrowService {
 
     }
 
+    @FeignClient(name = "CustomerService")
+    interface CustomerClient {
+        @GetMapping("/customer/{customerNumber}")
+        CustomerDto getCustomer(@PathVariable String customerNumber);
+    }
+
+    @FeignClient(name = "BookQueryService")
+    interface BookQueryClient {
+        @GetMapping("/book/{isbn}")
+        BookDto getBook(@PathVariable String isbn);
+    }
 }

@@ -15,23 +15,26 @@ spring:
         - id: BookQueryService
           uri: lb://BookQueryService
           predicates:
-            - Path=/api/books/**
+            - Path=/books/**
             - Method=GET
         - id: BookCommandService
           uri: lb://BookCommandService
           predicates:
-            - Path=/api/books/**
+            - Path=/books/**
             - Method=POST,PUT,DELETE,PATCH
         - id: ReviewService
           uri: lb://ReviewService
           predicates:
-            - Path=/api/reviews/**
+            - Path=/reviews/**
         - id: CustomerService
           uri: lb://CustomerService
           predicates:
-            - Path=/api/customers/**
+            - Path=/customers/**
         - id: BorrowService
           uri: lb://BorrowService
           predicates:
-            - Path=/api/borrows/**
+            - Path=/borrows/**
+  sleuth:
+    sampler:
+      probability: 1.0
 

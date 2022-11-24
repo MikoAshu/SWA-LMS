@@ -6,17 +6,11 @@ services:
     container_name: mongo
     ports:
       - "27017:27017"
-#    environment:
-#        - MONGO_INITDB_ROOT_USERNAME=root
-#        - MONGO_INITDB_ROOT_PASSWORD=example
 #  zipkin
   zipkin:
     image: openzipkin/zipkin
     ports:
       - "9411:9411"
-#    environment:
-#      - STORAGE_TYPE=elasticsearch
-#      - ES_HOSTS=http://elasticsearch:9200
 # kafka and zookeeper
   zookeeper:
     image: 'bitnami/zookeeper:latest'

@@ -11,7 +11,6 @@ spring:
       host: localhost
       port: 27017
       database: bookQueryDb
-
 # kafka
   kafka:
     producer:
@@ -31,6 +30,9 @@ spring:
             trusted:
               packages: "*"
     bootstrap-servers: localhost:9092
+  sleuth:
+    sampler:
+      probability: 1.0
 
 app:
   kafka:
