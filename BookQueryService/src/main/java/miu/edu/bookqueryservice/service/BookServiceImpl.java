@@ -47,10 +47,12 @@ public class BookServiceImpl implements BookService {
     public BookDto updateBook(BookDto bookDto) {
         Optional<Book> book = bookRepository.findById(bookDto.getIsbn());
         if (book.isPresent()) {
-            Book book1 = BookAdapter.toBook(bookDto);
-            bookRepository.save(book1);
-            eventPublisher.publish( new BookChangeEventDto(ChangeEventType.UPDATE, BookAdapter.toBookDto(book1)));
-            return BookAdapter.toBookDto(book1);
+            book.get().setAuthorName(bookDto.getAuthorName());
+            book.get().setDescription(bookDto.getDescription());
+            book.get().setTitle(bookDto.getTitle());
+            bookRepository.save(book.get());
+            eventPublisher.publish( new BookChangeEventDto(ChangeEventType.UPDATE, BookAdapter.toBookDto(book.get())));
+            return BookAdapter.toBookDto(book.get());
         } else {
             throw new CustomException("Book not found", HttpStatus.NOT_FOUND);
         }

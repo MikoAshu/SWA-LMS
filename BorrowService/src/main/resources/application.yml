@@ -37,7 +37,7 @@ spring:
 app:
   kafka:
     topic:
-      review: reviewTopic
+      borrow: borrowTopic
 # eureka
 eureka:
   client:

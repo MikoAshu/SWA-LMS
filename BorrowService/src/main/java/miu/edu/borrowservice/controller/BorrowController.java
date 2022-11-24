@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/borrows")
 public class BorrowController {
@@ -13,7 +15,7 @@ public class BorrowController {
     private BorrowService borrowService;
 
     @GetMapping("/{isbn}")
-    public ResponseEntity<BorrowDto> getBorrow(@PathVariable String isbn) {
+    public ResponseEntity<List<BorrowDto>> getBorrow(@PathVariable String isbn) {
         return ResponseEntity.ok(borrowService.getBorrow(isbn));
     }
 

@@ -11,7 +11,7 @@ public class EventPublisher {
     @Autowired
     private KafkaTemplate<String, BorrowChangeEventDto> kafkaTemplate;
 
-    @Value("${app.kafka.topic.review}")
+    @Value("${app.kafka.topic.borrow}")
     private String topic;
 
     public void publish(BorrowChangeEventDto borrowChangeEventDto) {

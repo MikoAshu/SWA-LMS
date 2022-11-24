@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -13,7 +14,7 @@ import java.time.LocalDate;
 @ToString
 public class BorrowDto {
     private String borrowingNumber;
-    private LocalDate date;
+    private Date date;
     private String customerNumber;
     private String customerName;
     private String isbn;

@@ -27,7 +27,9 @@ public class BookAdapter {
     }
 
     public static BookDto toBookDto(Book book) {
-        List<ReviewDto> reviewDtos = book.getReviews().stream().map(BookAdapter::toReviewDto).toList();
+        List<ReviewDto> reviewDtos = book.getReviews() != null ?
+                book.getReviews().stream().map(BookAdapter::toReviewDto).toList() :
+                null;
         return new BookDto(
                 book.getIsbn(),
                 book.getTitle(),
@@ -37,7 +39,9 @@ public class BookAdapter {
     }
 
     public static Book toBook(BookDto bookDto) {
-        List<Review> reviews = bookDto.getReviewDto().stream().map(BookAdapter::toReview).toList();
+        List<Review> reviews = bookDto.getReviewDto() != null ?
+                bookDto.getReviewDto().stream().map(BookAdapter::toReview).toList() :
+                null;
         return new Book(
                 bookDto.getIsbn(),
                 bookDto.getTitle(),

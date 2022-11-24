@@ -1,7 +1,9 @@
 package miu.edu.borrowservice.service;
 
+import java.util.List;
+
 public interface BorrowService {
-    BorrowDto getBorrow(String isbn);
+    List<BorrowDto> getBorrow(String isbn);
     void addBorrow(String isbn, String customerNumber);
     BorrowDto updateBorrow(BorrowDto borrowDto);
     void updateBorrow(BookDto bookDto);

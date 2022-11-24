@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.time.LocalDate;
+import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 import java.util.Random;
 
@@ -34,10 +36,12 @@ public class BorrowServiceImpl implements BorrowService {
     private BookQueryClient bookClient;
 
     @Override
-    public BorrowDto getBorrow(String isbn) {
-        Optional<Borrow> borrow = borrowRepository.findById(isbn);
+    public List<BorrowDto> getBorrow(String isbn) {
+        Optional<List<Borrow>> borrow = borrowRepository.findBorrowByIsbn(isbn);
         if (borrow.isPresent()) {
-            return BorrowAdapter.toBorrowDto(borrow.get());
+            List<Borrow> borrows = borrow.get();
+            List<BorrowDto> borrowDtos = BorrowAdapter.toBorrowDtoList(borrows);
+            return borrowDtos;
         } else {
             throw new CustomException("Borrow not found", HttpStatus.NOT_FOUND);
         }
@@ -57,7 +61,7 @@ public class BorrowServiceImpl implements BorrowService {
 
         Borrow borrow = new Borrow(
                 String.valueOf(new Random().nextInt(100000)),
-                LocalDate.now(),
+                new Date(),
                 customerNumber,
                 customerDto.getName(),
                 isbn,
@@ -82,26 +86,30 @@ public class BorrowServiceImpl implements BorrowService {
 
     @Override
     public void updateBorrow(BookDto bookDto) {
-        Optional<Borrow> borrowOptional = borrowRepository.findBorrowByIsbn(bookDto.getIsbn());
+        Optional<List<Borrow>> borrowOptional = borrowRepository.findBorrowByIsbn(bookDto.getIsbn());
         if (borrowOptional.isPresent()) {
-            Borrow borrow = borrowOptional.get();
-            borrow.setBookTitle(bookDto.getTitle());
-            borrowRepository.save(borrow);
-            BorrowChangeEventDto borrowChangeEventDto = new BorrowChangeEventDto(ChangeEventType.UPDATE, BorrowAdapter.toBorrowDto(borrow));
-            eventPublisher.publish(borrowChangeEventDto);
+            List<Borrow> borrows = borrowOptional.get();
+            for (Borrow borrow : borrows) {
+                borrow.setBookTitle(bookDto.getTitle());
+                borrowRepository.save(borrow);
+                BorrowChangeEventDto borrowChangeEventDto = new BorrowChangeEventDto(ChangeEventType.UPDATE, BorrowAdapter.toBorrowDto(borrow));
+                eventPublisher.publish(borrowChangeEventDto);
+            }
         }
     }
 
     @Override
     public void updateBorrow(CustomerDto customerDto) {
-          Optional<Borrow> borrowOptional = borrowRepository.findBorrowByCustomerNumber(customerDto.getCustomerNumber());
-          if (borrowOptional.isPresent()) {
-                Borrow borrow = borrowOptional.get();
-                borrow.setCustomerName(customerDto.getName());
-                borrowRepository.save(borrow);
-                BorrowChangeEventDto borrowChangeEventDto = new BorrowChangeEventDto(ChangeEventType.UPDATE, BorrowAdapter.toBorrowDto(borrow));
-                eventPublisher.publish(borrowChangeEventDto);
-          }
+            Optional<List<Borrow>> borrowOptional = borrowRepository.findBorrowByCustomerNumber(customerDto.getCustomerNumber());
+            if (borrowOptional.isPresent()) {
+                List<Borrow> borrows = borrowOptional.get();
+                for (Borrow borrow : borrows) {
+                    borrow.setCustomerName(customerDto.getName());
+                    borrowRepository.save(borrow);
+                    BorrowChangeEventDto borrowChangeEventDto = new BorrowChangeEventDto(ChangeEventType.UPDATE, BorrowAdapter.toBorrowDto(borrow));
+                    eventPublisher.publish(borrowChangeEventDto);
+                }
+            }
     }
 
     @Override
@@ -122,13 +130,13 @@ public class BorrowServiceImpl implements BorrowService {
 
     @FeignClient(name = "CustomerService")
     interface CustomerClient {
-        @GetMapping("/customer/{customerNumber}")
+        @GetMapping("/customers/{customerNumber}")
         CustomerDto getCustomer(@PathVariable String customerNumber);
     }
 
     @FeignClient(name = "BookQueryService")
     interface BookQueryClient {
-        @GetMapping("/book/{isbn}")
+        @GetMapping("/books/{isbn}")
         BookDto getBook(@PathVariable String isbn);
     }
 }
